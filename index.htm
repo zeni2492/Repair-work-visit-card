@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="CssFolder/Style.css">
+    <script src="https://kit.fontawesome.com/a2561a1dd2.js" crossorigin="anonymous"></script>
+    <link href="media-queries.css" rel="stylesheet">
+    <link rel="stylesheet" href="CssFolder/animate.css">
+
+</head>
+
+<body>
+    <div class="Sitebody">
+            <header>
+                <div class="header wow fadeInLeft">
+                    <div class="photo col-md-1 col-lg-1 col-sm-1 col-xl-1">
+                        <img src="IMG/Header.jpg" width="100%">
+                    </div>
+                    <div class="LogoName wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                        <h1>Denvo</h1>
+                    </div>
+                    <div class="Title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                        <h2 class="Title">Сайт для Заказа евроотделки</h2>
+                    </div>
+                    <div class="lead wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.6s">
+                        <h2 class="lead ">Качественный и стильный ремонт</h2>
+                    </div>
+                    <aside class="List wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                        <nav>
+                            <ul>
+                                <lI><a href="#">Информация</lI></a>
+                                <lI><a href="#">Отзывы</lI></a>
+                                <lI><a href="#">Прайс</lI></a>
+                                <lI><a href="#">Контакты</lI></a>
+                            </ul>
+                        </nav>
+                    </aside>
+            </header>
+
+            <div class="Section1 wow slideInRight" data-wow-delay="3s">
+                <div class="Intro">
+                    <h2 class="wow fadeIn" data-wow-duration="1s" >Что мы предлагаем</h2>
+                    <div class="anounce wow fadeIn" data-wow-duration="1s" >Мы предлагаем качественные услуги
+                        евроотделки по Челябинской области любой сложности. За нашими плечами огромное количество закрытых
+                        объектов и радостных заказчиков! Позвоните нам сегодня, чтобы узнать, как легко изменить свой дом до
+                        неузнаваемости! </div>
+                    <button class="button wow fadeIn" data-wow-duration="1s">Связаться с нами</button>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="textinfo"></div>
+                <div class="imginfo">
+                    <img src="">
+                    <img src="">
+                    <img src="">
+                    <img src="">
+                </div>
+
+
+
+            </div>
+
+            
+        </div>    
+
+        <div class="aunthwindow">
+            <div class="aunth">
+                <h2>Оставить заявку</h2>
+                <div class="login">Введите имя<input type="text" placeholder="Введите Имя"></div>
+                <div class="mail">Введите email<input type="text" placeholder="Введите email"></div>
+                <div class="phonenum">Введите телефон <input type="text" placeholder="Введие телефон" value="+7"></div>
+                <div class="agree"><button id="Coniform">Отправить</button></div>
+                <i class="xclose fa-solid fa-xmark"></i>
+                <img src="IMG/neaty-02.jpg">
+            </div>
+        </div>
+
+
+
+    </div>
+    
+    <div class="slideup">
+        <div class="bord">
+            &darr;
+        </div>
+    </div>
+
+
+
+    <script src="server.js"></script>
+    <script src="JsFolder/js.js"></script>
+    <script src="JsFolder/wow.min.js"></script>
+    <script>
+        new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true
+        }).init();
+    </script>
+</body>
+
+</html>

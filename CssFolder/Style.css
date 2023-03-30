@@ -1,0 +1,377 @@
+* {
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.bord{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #1500ff;
+    border-radius: 50%;
+    text-align: center;
+    transition: 1s;
+    user-select: none;
+}
+
+.slideup{
+    position: absolute;
+    left: 95%;
+    top: 90%;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.bord:hover{
+    background-color: #1500ff;
+    color: #fff;
+}
+
+.rot{
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    filter: brightness(50%);
+}
+
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.LogoName {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: rgb(255, 255, 255);
+}
+
+
+.Title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    white-space: nowrap;
+    font-size: 60px;
+}
+
+.lead {
+    font-size: 30px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    color: white;
+    white-space: nowrap;
+    opacity: .9;
+}
+
+.List {
+    position: absolute;
+    font-size: auto;
+    font-weight: 500;
+    word-spacing: 25px;
+    right: 16px;
+    top: 16px;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
+
+/*header end*/
+
+.Section1 {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    background-color: rgb(241, 241, 241);
+    background: linear-gradient(to top, #e1e1e1 1% 3%, #f2f2f2);
+}
+
+.Section1 {
+    position: relative;
+    height: over;
+    background: linear-gradient(to bottom, #e1e1e1 1% 3%, #f2f2f2);
+
+    width: 100%;
+    background: #dedede;
+    height: 550px;
+    position: relative;
+}
+
+.Section1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 10px;
+    background-size: 20px 20px;
+    background-image:
+        radial-gradient(circle at 10px -5px, transparent 12px, #ffffff 13px);
+}
+
+.Section1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 15px;
+    background-size: 40px 20px;
+    background-image:
+        radial-gradient(circle at 10px 15px, #ffffff 12px, transparent 13px);
+}
+
+.Intro h2 {
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%);
+    white-space: nowrap;
+    font-weight: 500;
+    color: black
+}
+
+.anounce  {
+    overflow-wrap: break-word;
+    text-align: center;
+    line-height: 1.35;
+    width: 1000px;
+    height: 200px;
+    font-size: 1.7em;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    opacity: .9;
+}
+
+/*authorization button*/
+.button {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -80%);
+    border: 3px solid #1500ff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #1500ff;
+    border-color: rgb(241, 241, 241);
+    color: white;
+}
+
+/*authorization*/
+.aunth h2 {
+    padding-left: 2px;
+    color: black;
+    z-index: 200;
+}
+
+.aunth {
+
+    border-radius: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 450px;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #fff;
+    box-shadow: 100px 100px 10000px 20000px rgba(121, 121, 121, 0.6);
+    transition: .2s ease-in-out;
+}
+
+.aunth img {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transform: translate(1px, .9px);
+
+
+}
+
+
+.aunth i {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 35px;
+    color: #000;
+    cursor: pointer;
+    z-index: 200;
+    transition: .2s ease;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.aunth i:hover {
+    color: #fff;
+    -webkit-transform: rotate(180deg);
+    /* Градусы поворота можно изменить по необходимости */
+    transform: rotate(180deg);
+}
+
+
+
+.login {
+    font-size: 20px;
+    padding-left: 25px;
+}
+
+.login input {
+    text-transform: capitalize;
+    position: absolute;
+    width: 300px;
+    outline: none;
+    border: 1px solid #1500ff;
+    height: 50px;
+    border-radius: 5px;
+    left: 25px;
+    top: 80px;
+    z-index: 200;
+}
+
+
+.mail {
+    font-size: 20px;
+    padding-top: 79px;
+    padding-left: 25px;
+}
+
+.mail input {
+    position: absolute;
+    width: 300px;
+    outline: none;
+    border: 1px solid #1500ff;
+    height: 50px;
+    border-radius: 5px;
+    left: 25px;
+    top: 190px;
+    z-index: 200;
+}
+
+.phonenum {
+    font-size: 20px;
+    padding-top: 79px;
+    padding-left: 25px;
+}
+
+.phonenum input {
+    text-transform: capitalize;
+    position: absolute;
+    width: 300px;
+    outline: none;
+    border: 1px solid #1500ff;
+    height: 50px;
+    border-radius: 5px;
+    left: 25px;
+    top: 300px;
+    z-index: 200;
+}
+
+.agree {
+    text-transform: capitalize;
+    position: absolute;
+    left: 25px;
+    top: 390px;
+    z-index: 200;
+    border-radius: 10px;
+}
+
+#Coniform {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: #1500ff;
+    background-color: white;
+}
+
+/*InfoBlock*/
+
+.info{
+    height: 500px;
+    width: 100%;
+    color: #f2f2f2;
+
+}
+
+
+
+/*end authorization*/
+@media screen and (max-width: 500px) {
+    .header {
+        width: 100%;
+    }
+
+    .LogoName {
+        font-size: 6px;
+    }
+
+    .Title {
+        font-size: 15px;
+    }
+
+    .lead {
+        font-size: 12px;
+        top: 60%;
+    }
+
+    .List {
+        top: 80%;
+        align-items: start;
+        font-size: 10px;
+        float: left;
+    }
+}
